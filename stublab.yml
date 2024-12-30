@@ -1,0 +1,90 @@
+#see https://github.com/azyablov/optics-dcn-workshop-ospf-demo
+
+name: stublab
+
+topology:
+  nodes:
+    001:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 001/daemons:/etc/frr/daemons
+        - 001/frr.conf:/etc/frr/frr.conf
+    002:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 002/daemons:/etc/frr/daemons
+        - 002/frr.conf:/etc/frr/frr.conf
+    003:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 003/daemons:/etc/frr/daemons
+        - 003/frr.conf:/etc/frr/frr.conf
+    004:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 004/daemons:/etc/frr/daemons
+        - 004/frr.conf:/etc/frr/frr.conf
+    005:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 005/daemons:/etc/frr/daemons
+        - 005/frr.conf:/etc/frr/frr.conf
+    006:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 006/daemons:/etc/frr/daemons
+        - 006/frr.conf:/etc/frr/frr.conf
+    007:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 007/daemons:/etc/frr/daemons
+        - 007/frr.conf:/etc/frr/frr.conf
+    008:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 008/daemons:/etc/frr/daemons
+        - 008/frr.conf:/etc/frr/frr.conf
+    009:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 009/daemons:/etc/frr/daemons
+        - 009/frr.conf:/etc/frr/frr.conf
+    010:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 010/daemons:/etc/frr/daemons
+        - 010/frr.conf:/etc/frr/frr.conf
+    011:
+      kind: linux
+      image: quay.io/frrouting/frr:10.2.0
+      binds:
+        - 011/daemons:/etc/frr/daemons
+        - 011/frr.conf:/etc/frr/frr.conf
+    PC1:
+      kind: linux
+      image: praqma/network-multitool:latest
+
+  links:
+    - endpoints: ["001:ppp_osc1", "002:ppp_osc1"]
+    - endpoints: ["002:ppp_osc2", "003:ppp_osc2"]
+    - endpoints: ["003:ppp_osc3", "004:ppp_osc3"]
+    - endpoints: ["004:ppp_osc4", "005:ppp_osc4"]
+    - endpoints: ["001:ppp_osc5", "005:ppp_osc5"]
+    - endpoints: ["001:ppp_osc6", "006:ppp_osc6"]
+    - endpoints: ["006:ppp_osc7", "007:ppp_osc7"]
+    - endpoints: ["007:ppp_osc8", "008:ppp_osc8"]
+    - endpoints: ["008:ppp_osc9", "009:ppp_osc9"]
+    - endpoints: ["009:ppp_osc10", "010:ppp_osc10"]
+    - endpoints: ["010:ppp_osc11", "011:ppp_osc11"]
+    - endpoints: ["011:ppp_osc12", "004:ppp_osc12"]
+    - endpoints: ["PC1:eth1", "005:eth1"]

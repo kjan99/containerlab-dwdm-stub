@@ -1,0 +1,589 @@
+{
+  "name": "stublab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-ec1f6a21dcc6",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "001": {
+      "index": "0",
+      "shortname": "001",
+      "longname": "clab-stublab-001",
+      "fqdn": "001.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/001",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/001",
+        "clab-node-name": "001",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "002": {
+      "index": "1",
+      "shortname": "002",
+      "longname": "clab-stublab-002",
+      "fqdn": "002.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/002",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::c",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/002",
+        "clab-node-name": "002",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "003": {
+      "index": "2",
+      "shortname": "003",
+      "longname": "clab-stublab-003",
+      "fqdn": "003.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/003",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::a",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/003",
+        "clab-node-name": "003",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "004": {
+      "index": "3",
+      "shortname": "004",
+      "longname": "clab-stublab-004",
+      "fqdn": "004.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/004",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/004",
+        "clab-node-name": "004",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "005": {
+      "index": "4",
+      "shortname": "005",
+      "longname": "clab-stublab-005",
+      "fqdn": "005.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/005",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.13",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::d",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/005",
+        "clab-node-name": "005",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "006": {
+      "index": "5",
+      "shortname": "006",
+      "longname": "clab-stublab-006",
+      "fqdn": "006.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/006",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/006",
+        "clab-node-name": "006",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "007": {
+      "index": "6",
+      "shortname": "007",
+      "longname": "clab-stublab-007",
+      "fqdn": "007.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/007",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/007",
+        "clab-node-name": "007",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "008": {
+      "index": "7",
+      "shortname": "008",
+      "longname": "clab-stublab-008",
+      "fqdn": "008.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/008",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/008",
+        "clab-node-name": "008",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "009": {
+      "index": "8",
+      "shortname": "009",
+      "longname": "clab-stublab-009",
+      "fqdn": "009.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/009",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/009",
+        "clab-node-name": "009",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "010": {
+      "index": "9",
+      "shortname": "010",
+      "longname": "clab-stublab-010",
+      "fqdn": "010.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/010",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::b",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/010",
+        "clab-node-name": "010",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "011": {
+      "index": "10",
+      "shortname": "011",
+      "longname": "clab-stublab-011",
+      "fqdn": "011.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/011",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:10.2.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/011",
+        "clab-node-name": "011",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PC1": {
+      "index": "11",
+      "shortname": "PC1",
+      "longname": "clab-stublab-PC1",
+      "fqdn": "PC1.stublab.io",
+      "group": "",
+      "labdir": "/workspaces/stublab/clab-stublab/PC1",
+      "kind": "linux",
+      "image": "praqma/network-multitool:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ec1f6a21dcc6",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/stublab/clab-stublab/PC1",
+        "clab-node-name": "PC1",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/stublab/stublab.yml",
+        "containerlab": "stublab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "001",
+        "interface": "ppp_osc1",
+        "mac": "aa:c1:ab:a6:a5:0d",
+        "peer": "z"
+      },
+      "z": {
+        "node": "002",
+        "interface": "ppp_osc1",
+        "mac": "aa:c1:ab:a8:7e:38",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "002",
+        "interface": "ppp_osc2",
+        "mac": "aa:c1:ab:df:69:e9",
+        "peer": "z"
+      },
+      "z": {
+        "node": "003",
+        "interface": "ppp_osc2",
+        "mac": "aa:c1:ab:dc:50:42",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "003",
+        "interface": "ppp_osc3",
+        "mac": "aa:c1:ab:3a:52:71",
+        "peer": "z"
+      },
+      "z": {
+        "node": "004",
+        "interface": "ppp_osc3",
+        "mac": "aa:c1:ab:75:0e:ba",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "004",
+        "interface": "ppp_osc4",
+        "mac": "aa:c1:ab:04:9d:16",
+        "peer": "z"
+      },
+      "z": {
+        "node": "005",
+        "interface": "ppp_osc4",
+        "mac": "aa:c1:ab:43:ad:55",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "001",
+        "interface": "ppp_osc5",
+        "mac": "aa:c1:ab:60:fe:5d",
+        "peer": "z"
+      },
+      "z": {
+        "node": "005",
+        "interface": "ppp_osc5",
+        "mac": "aa:c1:ab:84:a0:da",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "001",
+        "interface": "ppp_osc6",
+        "mac": "aa:c1:ab:2b:08:cc",
+        "peer": "z"
+      },
+      "z": {
+        "node": "006",
+        "interface": "ppp_osc6",
+        "mac": "aa:c1:ab:d4:bf:f3",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "006",
+        "interface": "ppp_osc7",
+        "mac": "aa:c1:ab:86:a8:38",
+        "peer": "z"
+      },
+      "z": {
+        "node": "007",
+        "interface": "ppp_osc7",
+        "mac": "aa:c1:ab:18:76:52",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "007",
+        "interface": "ppp_osc8",
+        "mac": "aa:c1:ab:d3:ea:e3",
+        "peer": "z"
+      },
+      "z": {
+        "node": "008",
+        "interface": "ppp_osc8",
+        "mac": "aa:c1:ab:d7:08:62",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "008",
+        "interface": "ppp_osc9",
+        "mac": "aa:c1:ab:04:46:8a",
+        "peer": "z"
+      },
+      "z": {
+        "node": "009",
+        "interface": "ppp_osc9",
+        "mac": "aa:c1:ab:ac:02:36",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "009",
+        "interface": "ppp_osc10",
+        "mac": "aa:c1:ab:8b:bb:a2",
+        "peer": "z"
+      },
+      "z": {
+        "node": "010",
+        "interface": "ppp_osc10",
+        "mac": "aa:c1:ab:8e:a9:56",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "010",
+        "interface": "ppp_osc11",
+        "mac": "aa:c1:ab:e4:29:c1",
+        "peer": "z"
+      },
+      "z": {
+        "node": "011",
+        "interface": "ppp_osc11",
+        "mac": "aa:c1:ab:97:72:68",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "011",
+        "interface": "ppp_osc12",
+        "mac": "aa:c1:ab:8c:16:19",
+        "peer": "z"
+      },
+      "z": {
+        "node": "004",
+        "interface": "ppp_osc12",
+        "mac": "aa:c1:ab:f2:40:31",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "PC1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:8b:fd:d5",
+        "peer": "z"
+      },
+      "z": {
+        "node": "005",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:2b:ac:13",
+        "peer": "a"
+      }
+    }
+  ]
+}
