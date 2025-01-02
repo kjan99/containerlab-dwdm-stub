@@ -22,7 +22,7 @@ Connecting to nodes:
 
 *sudo docker exec -it \<container\> bash*  
 or to connect directly to OSPF engine:    
-*sudo docker exec -it <container> vtysh*  
+*sudo docker exec -it \<container\> vtysh*  
 
 Example:  
 *sudo docker exec it clab-stublab-001 vtysh*  
