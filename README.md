@@ -1,10 +1,32 @@
-# Container lab with OSPF network representing DWDM nodes
+# Container lab simulating  OSPF in small DWDM network
 
-Small network simulating OSPF for DWDM nodes.   
-Network composed of backbone and totally stub areas  
+Small network composed of backbone and totally stub area.  
 
-DWDM NEs are running FRR router (with the assumption this is equivalnent to quagga router).  
+DWDM NEs are running FRR router (with the assumption FRR is equivalnent to quagga router).  
 NMS is simulated by PC.  
+
+![pic1](https://github.com/kjan99/lab-stub/blob/main/ospf-dwdm-1.svg)
+
+You can start lab in Codespaces by clickling button below.  
+Once Codespaces is up, deploy lab with  
+
+*clab deploy -t stublab.yml*
+
+Later you can use scripts  
+*sudo ./stop.sh*  
+*sudo ./start.sh*  
+*sudo ./restart.sh*  
+to manage lab.  
+
+Connecting to nodes:  
+
+*sudo docker exec -it \<container\> bash*  
+or to connect directly to OSPF engine:    
+*sudo docker exec -it <container> vtysh*  
+
+Example:  
+*sudo docker exec it clab-stublab-001 vtysh*  
+
 
 ---
 <div align=center markdown>
